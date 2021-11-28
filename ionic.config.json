@@ -1,0 +1,7 @@
+{
+  "name": "Prestamistapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
