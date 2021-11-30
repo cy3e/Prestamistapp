@@ -1,0 +1,73 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+  <div id="control">
+    <IonList>
+      <IonItem>
+      
+    <ion-input 
+      id = "nombre"  
+      shape = "round"  
+      placeholder="ingrese su nombre">
+      
+    </ion-input>
+      
+    <ion-input 
+      id = "apellido"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su apellido">
+    </ion-input>
+
+    <ion-input 
+      id = "correo"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su correo electronico">
+    </ion-input>
+    
+      
+    <ion-input 
+      id = "usuario"  
+      shape = "round"  
+      placeholder="ingrese su nombre de usuario">
+    </ion-input>
+
+    
+    <ion-input 
+      id = "contra"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su contrase;a">
+    </ion-input>
+
+    <ion-input 
+      id = "contrafirm"  
+      shape = "round" 
+      type = "password"
+      placeholder="confirme su contrase;a">
+    </ion-input>
+  
+    </IonItem>
+
+      <ion-Button 
+      id = "suc" 
+      color = "success" 
+      shape = "round" 
+      (click) = "crear()">
+      <Strong>log</Strong>
+    </ion-Button>
+
+    <ion-Button 
+    id = "can" 
+    color = "danger" 
+    shape = "round" 
+    (click) = "cancel()">
+    <Strong>cancel</Strong>
+  </ion-Button>
+
+    </IonList>
+
+    <p id= "info">al usar la app aceptas <a (click) = "politicas()"> nuestras politicas de uso y privacidad </a> </p>
+
+  </div>
+  </ion-content>

@@ -1,0 +1,30 @@
+#fondo
+{
+    --ion-background-color: #A1FFCE;  /* fallback for old browsers */
+    --ion-background-color: -webkit-linear-gradient(to bottom, #ffffff, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    --ion-background-color: linear-gradient(to bottom, #ffffff, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+#cardz
+{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+#cardx
+{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 30%;
+    transform: translateY(65%);
+}
+#trasparente
+{
+    --background-color: tra
+}

@@ -1,0 +1,64 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+<div id="control">
+  <IonItem>
+      
+  <ion-input 
+    id = "nombre" 
+    disabled ="true"
+    shape = "round">
+    <p>
+      {{nombre}}
+    </p> 
+  </ion-input>
+
+  <ion-input 
+    id = "dni"  
+    disabled ="true"
+    shape = "round">
+    <p>
+      {{DNI}}
+    </p>
+  </ion-input>
+
+  <ion-input 
+    id = "ntarjeta"  
+    shape = "round"  
+    placeholder="cuenta bancaria">
+  </ion-input>
+
+  <ion-input 
+    id = "fecaexp"  
+    shape = "round"  
+    placeholder="monto">
+  </ion-input>     
+      
+    <ion-input 
+      id = "contra"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su contrase;a">
+    </ion-input>
+    
+    <ion-checkbox id = "chek" color="primary"> <ion-label><p>esto es una modificacion a su cuenta?</p></ion-label>  </ion-checkbox>
+
+    </IonItem>
+
+      <ion-Button 
+      id = "suc" 
+      color = "success" 
+      shape = "round" 
+      (click) = "continuar()">
+      <Strong>continuar</Strong>
+    </ion-Button>
+
+    <ion-Button 
+    id = "can" 
+    color = "danger" 
+    shape = "round" 
+    (click) = "cancelar()">
+    <Strong>cancel</Strong>
+  </ion-Button>
+
+  </div>
+  </ion-content>

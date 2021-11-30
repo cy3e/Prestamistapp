@@ -1,0 +1,35 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+  <div id="control">
+    <IonItem>
+
+    <ion-input 
+      id = "fecaexp"  
+      shape = "round"  
+      placeholder="Monto a pagar">
+    </ion-input>   
+        
+      </IonItem>
+  
+        <ion-Button 
+        id = "suc" 
+        color = "success" 
+        shape = "round"
+        type = "number"
+        (click) = "continuar()">
+        <Strong>confirmar pago</Strong>
+      </ion-Button>
+  
+      <ion-Button 
+      id = "can" 
+      color = "danger" 
+      shape = "round"
+      (click) = "cancelar()">
+      <Strong>
+        cancelar
+      </Strong>
+    </ion-Button>
+  
+    </div>
+    </ion-content>
+  

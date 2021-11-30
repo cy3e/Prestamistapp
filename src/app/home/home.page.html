@@ -1,20 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+
+<ion-content id="fondo" [fullscreen]="true" >
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+ <div id="container">
+    <strong id="titulo">PrestamistApp</strong> 
+    <p id= "info">no tienes una cuenta todavia? pues que esperas <a id ="info" (click) = "signup()"> crea una </a> </p>
   </div>
+  
+  <ion-Button 
+  id = "Prestacount" 
+  color = "success" 
+  shape = "round" 
+  (click) = "login()">
+  <Strong>use Prestacount</Strong>
+</ion-Button>
+  
+  <ion-Button id = "Google" 
+  color = "dark" 
+  shape = "round"  
+  name = "red-social"
+  (click) = "alert()">
+  <Strong>use Google</Strong>
+  </ion-Button>
+  
+  <ion-Button 
+  id = "Facebook"
+  color = "secondary" 
+  name = "red-social"
+  shape = "round" 
+  (click) = "alert()">
+   <Strong>use Facebook</Strong>
+  </ion-Button>
+  
+  <ion-Button 
+  id = "Apple" 
+  color="medium" 
+  name = "red-social"
+  shape = "round"  
+  (click) = "alert()">
+  <Strong>use Apple</Strong>
+</ion-Button>
+  
+</div>
+ 
 </ion-content>

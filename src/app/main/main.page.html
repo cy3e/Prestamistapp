@@ -1,0 +1,38 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+  <div >
+    <ion-card 
+    id = "cardz"
+    class="ios hydra"
+    (click) = "Solicitar()"
+    >
+      <ion-card-header class="ion-inherit-color ios hydrated">
+        <img 
+        src="https://th.bing.com/th/id/OIP.EVCotrR2r52VPb3O4GipTwHaE2?pid=ImgDet&rs=1">
+        <ion-Button 
+        (click) = "solicitar()"
+        fill = "clear">
+          Solicitar/Modificar
+        </ion-Button>
+      </ion-card-header>
+    </ion-card>
+  
+    
+    <ion-card 
+    id = "cardx" 
+    
+    (click) = "pagos()">
+      <ion-card-header class="ion-inherit-color ios hydrated">
+        <img  
+        src="https://revistamyt.com/wp-content/uploads/2020/09/Pago-sin-contacto-1.jpg">
+        <ion-Button 
+        (click) = "pagos()"
+        fill = "clear">
+          Pagos 
+        </ion-Button>
+      </ion-card-header>
+    </ion-card>
+  </div>
+  
+  </ion-content>
+  

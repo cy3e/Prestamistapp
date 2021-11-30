@@ -11,6 +11,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'transaccion',
+    loadChildren: () => import('./transaccion/transaccion.module').then( m => m.TransaccionPageModule)
+  },
+  {
+    path: 'montoapagar',
+    loadChildren: () => import('./montoapagar/montoapagar.module').then( m => m.MontoapagarPageModule)
+  },
+  {
+    path: 'solicitar',
+    loadChildren: () => import('./solicitar/solicitar.module').then( m => m.SolicitarPageModule)
+  },
 ];
 
 @NgModule({

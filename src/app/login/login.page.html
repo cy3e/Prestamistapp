@@ -1,0 +1,42 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+  <div id="control">
+    <IonList>
+      <IonItem>
+      
+        <ion-input 
+        id = "usuario"  
+        shape = "round"  
+        placeholder="ingresa tu nombre de usuario/correo">
+      
+      </ion-input>
+      
+      
+      <ion-input 
+      id = "contra"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su contrase;a">
+    </ion-input>
+      
+    </IonItem>
+
+      <ion-Button 
+      id = "suc" 
+      color = "success" 
+      shape = "round" 
+      (click) = "enter()">
+      <Strong>log</Strong>
+    </ion-Button>
+
+    <ion-Button 
+    id = "can" 
+    color = "danger" 
+    shape = "round" 
+    (click) = "cancel()">
+    <Strong>cancel</Strong>
+  </ion-Button>
+
+    </IonList>
+  </div>
+  </ion-content>

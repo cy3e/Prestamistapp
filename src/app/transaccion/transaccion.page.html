@@ -1,0 +1,66 @@
+<ion-content id="fondo" [fullscreen]="true" >
+
+<div id="control">
+  <IonItem>
+      
+  <ion-input 
+    id = "nombre"  
+    shape = "round"  
+    placeholder="Nombre completo">
+  </ion-input>
+
+  <ion-input 
+    id = "dni"  
+    shape = "round"  
+    placeholder="DNI">
+  </ion-input>
+
+  <ion-input 
+    id = "ntarjeta"  
+    shape = "round"  
+    placeholder="Numero de la tarjeta">
+  </ion-input>
+
+  <ion-input 
+    id = "fecaexp"  
+    shape = "round"  
+    placeholder="fecha de vencimiento">
+  </ion-input>   
+
+  <ion-input 
+    id = "cvv"  
+    shape = "round"  
+    placeholder="CVV"
+    size = "number">
+  </ion-input>
+
+
+      
+      
+    <ion-input 
+      id = "contra"  
+      shape = "round" 
+      type = "password"
+      placeholder="ingrese su contrase;a">
+    </ion-input>
+      
+    </IonItem>
+
+      <ion-Button 
+      id = "suc" 
+      color = "success" 
+      shape = "round" 
+      (click) = "continuar()">
+      <Strong>continuar</Strong>
+    </ion-Button>
+
+    <ion-Button 
+    id = "can" 
+    color = "danger" 
+    shape = "round" 
+    (click) = "cancelar()">
+    <Strong>cancel</Strong>
+  </ion-Button>
+
+  </div>
+  </ion-content>
